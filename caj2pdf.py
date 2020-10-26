@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 
-import os
 import argparse
+import os
+
 from cajparser import CAJParser
 from utils import add_outlines
 
@@ -16,7 +17,8 @@ if __name__ == "__main__":
     convert_parser.add_argument("input", help="Path to the CAJ file.")
     convert_parser.add_argument("-o", "--output", help="Output path to the PDF file.", required=False)
 
-    outlines_parser = subparsers.add_parser("outlines", help="Extract outlines from the CAJ file and add it to PDF file.")
+    outlines_parser = subparsers.add_parser("outlines",
+                                            help="Extract outlines from the CAJ file and add it to PDF file.")
     outlines_parser.add_argument("input", help="Path to the CAJ file.")
     outlines_parser.add_argument("-o", "--output", help="Path to the PDF file.", required=True)
 

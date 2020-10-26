@@ -1,5 +1,6 @@
 import os
 import sys
+
 import PyPDF2.pdf as PDF
 from PyPDF2 import PdfFileWriter, PdfFileReader
 
